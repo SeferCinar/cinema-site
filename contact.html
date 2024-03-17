@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showAlert() {
+            alert("Hi everyone from JavaScript!");
+            document.getElementById("message").innerText = "Hi everyone from JavaScript!";
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="movies.html">Vizyondakiler</a></li>
+            <li><a href="tickets.html">Biletler</a></li>
+            <li><a href="faq.html">S.S.S</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </div>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>İletişim Bilgileri</h2>
+            <p><strong>Adres:</strong> 1234 Sokak, No: 666, İstanbul, Türkiye</p>
+            <p><strong>Telefon:</strong> +90 123 456 78 90</p>
+            <p><strong>E-posta:</strong> info@novacinema.com</p>
+        </div>
+    </div>
+    <div id="uniquecsspart">
+        Sample text in this unique part.
+    </div>
+    <a href="tickets.html"><img src="./assets/click.png" alt="bilet almak için tıkla" style="width:200px;height:200px;"></a>
+    <button onclick="showAlert()">Buraya Tıkla</button>
+</body>
+</html>

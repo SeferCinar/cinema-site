@@ -1,0 +1,242 @@
+/*
+Uniquecsspart kısmı 
+Uniquecsspart kısmı 
+Uniquecsspart kısmı 
+Uniquecsspart kısmı 
+*/
+#uniquecsspart{
+    background-color: #e3f542;
+    color: #d62a0f;
+    text-align: center;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    
+}
+
+
+
+
+/*navbar css başlangıç*/
+.navbar {
+    background-color: #645b5b; /* arkaplan rengi */
+    overflow: hidden; /* scroll barının gözükmemesi için*/
+    text-align: center; /* navbarı ortalamak için */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin-top: 5px;    /* bar ve yazılar arasında boşluk bırakmak için*/
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block; /* Linkleri yan yana hizala */
+    margin-left: 5px;
+    margin-right: 5px;
+   
+    
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px; /* Link içeriği ile çubuğun kenarları arasındaki boşluk */
+    text-decoration: none;
+    transition: background-color 0.4s ease-in, color 0.3s; /* belirli bir animasyonla rengin değişmesi için */
+    border-radius: 10px;
+}
+
+.navbar li a:hover {
+    background-color: #ddd; /* Linkin üzerine gelindiğinde arka plan rengi değişmesi için */
+    color: black;
+}
+/*filmerin css*/
+#trendMovies {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px; 
+    grid-template-rows: auto; 
+    row-gap: 100px; 
+    column-gap: 50px;
+    justify-content: center;
+    
+}
+.trendMoviesText{
+    text-align: center;
+}
+.movieList {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px; 
+    grid-template-rows: auto; 
+    row-gap: 100px; 
+    column-gap: 50px;
+    justify-content: center;
+}
+
+.movie {
+    background-color: #ebe7e7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: box-shadow 0.2s;   
+}
+.movie:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.movie img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.movie h2 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.movie p {
+    color: #666;
+}
+
+/*Bilet alma sayfası css*/
+
+.getTicket {
+    width: 50%;
+    margin: 50px auto; /* Sayfa ortasına yatay ve dikey hizalama */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px; /* Kenar yuvarlaklığı */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+}
+
+.getTicket h1 {
+    color: #333;
+    text-align: center;
+}
+
+.getTicket form {
+    text-align: left;
+}
+
+.getTicket label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.getTicket input[type="text"],
+.getTicket input[type="email"],
+.getTicket select,
+.getTicket button {
+    width: calc(100% - 20px); /* Kenar boşlukları göz önüne alarak genişlik ayarı */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+.getTicket input[type="radio"] {
+    -webkit-appearance: none; /* Safari/Chrome için varsayılan görünümü kaldır */
+    -moz-appearance: none; /* Firefox için varsayılan görünümü kaldır */
+    appearance: none; /* Diğer tarayıcılar için varsayılan görünümü kaldır */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 50%; /* Daire şeklinde radio buton */
+    margin-right: 5px;
+    vertical-align: middle; /* Dikey hizalama */
+    cursor: pointer;
+}
+.getTicket input[type="radio"]:checked{
+    background-color: #333;
+
+}
+.getTicket input[type="radio"] + label {
+    display: inline-block;
+    vertical-align: middle; /* Dikey hizalama */
+    cursor: pointer;
+}
+/* Checkbox'un görünümünü geliştirmek için stil tanımlaması */
+.getTicket input[type="checkbox"] {
+    -webkit-appearance: none; /* Safari/Chrome için varsayılan görünümü kaldır */
+    -moz-appearance: none; /* Firefox için varsayılan görünümü kaldır */
+    appearance: none; /* Diğer tarayıcılar için varsayılan görünümü kaldır */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 3px;
+    margin-right: 5px;
+    vertical-align: middle; /* Dikey hizalama */
+    cursor: pointer;
+}
+
+/* Checkbox seçili olduğunda iç kısmını doldurmak için stil tanımlaması */
+.getTicket input[type="checkbox"]:checked {
+    background-color: #333;
+}
+
+/* Checkbox'un etiketi için stil tanımlaması */
+.getTicket input[type="checkbox"] + label {
+    display: inline-block;
+    vertical-align: middle; /* Dikey hizalama */
+    cursor: pointer;
+}
+
+
+.getTicket button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.getTicket button:hover {
+    background-color: #555;
+}
+/*sıkça sorulanlar css*/
+.faqWrapper{
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #ebe7e7;
+    margin-top: 10px;
+    text-align: center;
+}
+.questionItem{
+    margin: 50px;
+}
+.question{
+    font-weight: 300;
+    font-size: 26px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 10px;
+}
+.answer{
+    font-weight: 100;
+    font-size: 18px;
+}
+/*iletişim css*/
+
+.contact-container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-info {
+    margin-bottom: 20px;
+}
+.contact-info h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+.contact-info p {
+  
+
